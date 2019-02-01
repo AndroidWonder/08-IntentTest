@@ -48,12 +48,16 @@ public class MainActivity extends Activity {
         switch (requestCode) {
             case (requestCode_235): {
 
-                if (resultCode == Activity.RESULT_OK)
+                if (resultCode == Activity.RESULT_OK) {
+
+                    Log.e("IntentTest", "Result OK for " + requestCode);
                     Toast.makeText(this, "Result OK for " + requestCode, Toast.LENGTH_LONG).show();
-                else
-                    Toast.makeText(this, "Result NOT OK for " + requestCode, Toast.LENGTH_LONG).show();
+                }
+                else {
+                Log.e("IntentTest", "Result NOT OK for " + requestCode);
+                    Toast.makeText(this, "Result NOT OK for " + requestCode, Toast.LENGTH_LONG).show();}
                 break;
-            }
+             }
 
             case (requestCode_240): {
 
@@ -75,6 +79,7 @@ public class MainActivity extends Activity {
 
     protected void onRestart(){
         super.onRestart();
+        Log.e("IntentTest", "Restart Main Activity");
         Toast.makeText(this,"Restart!!!",Toast.LENGTH_LONG).show();
     }
 
