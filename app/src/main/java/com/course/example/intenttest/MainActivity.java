@@ -35,8 +35,8 @@ public class MainActivity extends Activity {
         Intent intent1 = new Intent(this, UIDemo.class);
         startActivityForResult(intent1, requestCode_235);
 
-       // Intent intent2 = new Intent(this, UIDemo.class);
-       // startActivityForResult(intent2, requestCode_240);
+        // Intent intent2 = new Intent(this, UIDemo.class);
+        // startActivityForResult(intent2, requestCode_240);
 
     }
 
@@ -52,12 +52,12 @@ public class MainActivity extends Activity {
 
                     Log.e("IntentTest", "Result OK for " + requestCode);
                     Toast.makeText(this, "Result OK for " + requestCode, Toast.LENGTH_LONG).show();
+                } else {
+                    Log.e("IntentTest", "Result NOT OK for " + requestCode);
+                    Toast.makeText(this, "Result NOT OK for " + requestCode, Toast.LENGTH_LONG).show();
                 }
-                else {
-                Log.e("IntentTest", "Result NOT OK for " + requestCode);
-                    Toast.makeText(this, "Result NOT OK for " + requestCode, Toast.LENGTH_LONG).show();}
                 break;
-             }
+            }
 
             case (requestCode_240): {
 
@@ -77,10 +77,10 @@ public class MainActivity extends Activity {
 
     }// onActivityResult
 
-    protected void onRestart(){
+    protected void onRestart() {
         super.onRestart();
         Log.e("IntentTest", "Restart Main Activity");
-        Toast.makeText(this,"Restart!!!",Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Restart!!!", Toast.LENGTH_LONG).show();
     }
 
 }
