@@ -32,6 +32,7 @@ public class MainActivity extends Activity {
     protected void onStart() {
         super.onStart();
 
+        //Request for other Activity started immediately upon starting app
         Intent intent1 = new Intent(this, UIDemo.class);
         startActivityForResult(intent1, requestCode_235);
 
