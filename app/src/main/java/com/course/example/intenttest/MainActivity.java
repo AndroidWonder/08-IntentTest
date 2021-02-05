@@ -4,7 +4,7 @@ onActivityResult() when called is passed the request code and result code.
 
 onStart() is used to start the Activities. This allows multiple attempts
 to enter the correct name. If onCreate() was used, the app wouldn't restart.
-Can you explain why?
+Can you explain why???
 
 Notice the manifest entries for all the Activities.
 */
